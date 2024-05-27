@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+
+            spacing: {
+              13: '3.25rem',
+              // membuat margin yang tidak ada angk adalam tailwindcss 
+
+              // saya masukan font yang saya ambil dari google
+              fontFamily: {
+                inter: ['Inter'],
+                // edn
+                colors: {
+                  // Cini cara gunakan warna sednri 
+                  wpu: '#bada55',
+                  kopi: '#c0ffee',
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+  </style>
+</head>
+
+<body>
+  <h1 class="text-8xl text-center font-bold my-10  bg-teal-600">
+    Hello world!
+  </h1>
+  <!-- content -->
+  <section class="mb-10 bg-amber-400 text-bold">
+    <h2 class="t
+    text-center text-8xl">spacing</h2>
+    <div class="m-13 text-center text-balance text-bold text-5xl pb-4">margin</div>
+    <div class="py-8 text-6xl bg-center text-center">padding</div>
+  </section>
+  <!-- content -->
+
+  <section class="mb-10 bg-gradient-to-tr from-green-400 to-indigo-600">
+    <h3 class="text-center text-8xl font-bold">Sizing</h3>
+    <div class="m-13 text-center font-bold text-3xl">Margin</div>
+    <div class="py-8 text-center font-thin text-3xl">padding</div>
+    <!-- membuat 2 warna dalam  -->
+    <div class="w-32 h-32 text-4xl text-center bg-gradient-to-br from-orange-500 to-indigo-600">Kotak</div>
+  </section>
+
+  <section class="mb-98 font-inter mx-w-3xl mx-auto border-l-indigo-800">
+    <!-- INI SAYA MEMBUAT WARNA DI BELAKAN ATAU TRANSPARANT -->
+    <h2 class="mb-10 text-7xl text-center font-bold bg-gradient-to-br from-blue-600 to-teal-400 bg-clip-text text-transparent">Membuat Blok Artikel Pada TailwindCss</h2>
+    <div class="mb-10 text-center"> By <span class="bg-gradient-to-br from-green-500 to-teal-100 bg-clip-text text-transparent">Jhelky Walliya</span> 2024/05/27</div>
+    <p class="mb-10 text-center">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto velit culpa ipsam, quae tenetur maiores
+      eligendi nisi obcaecati omnis ex quas ad minima modi dicta mollitia vero.
+    </p>
+
+    <blockquote class="mb-10 text-center italic font-thin text-xl"> "Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Earum aliquam sapiente iure provident odit
+      iste voluptatum. Provident inventore nemo architecto aliquid eveniet ratione reprehenderit quas recusandae, nihil,
+      officiis necessitatibus nostrum deleniti tempora, dolor consequatur assumenda veritatis. Veniam, perspiciatis,
+      dolore hic ducimus, possimus minus iusto quasi exercitationem dignissimos nisi enim eos!</blockquote>
+
+    <p class="mb-20 text-center">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis temporibus nam, magnam repellendus nemo enim rem
+      ratione fuga nisi ducimus dignissimos iusto quae alias at distinctio atque. Unde laborum et vero ut eos neque quos
+      incidunt excepturi repellendus.
+    </p>
+  </section>
+</body>
+
+</html>
