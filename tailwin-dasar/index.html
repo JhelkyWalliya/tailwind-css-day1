@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+
+            spacing: {
+              13: '3.25rem',
+              // membuat margin yang tidak ada angk adalam tailwindcss 
+
+              // saya masukan font yang saya ambil dari google
+              fontFamily: {
+                inter: ['Inter'],
+                // edn
+                colors: {
+                  // Cini cara gunakan warna sednri 
+                  wpu: '#bada55',
+                  kopi: '#c0ffee',
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  </script>
+   <title>Belajar TailwindCss</title>
+   <style>
+ #toggle:checked ~ label div.toggle-circle {
+transform: translateX(1rem);
+ }
+   </style>
+</head>
+
+<body>
+  <h1 class="text-8xl text-center font-bold my-10  bg-teal-600">
+    Hello world!
+  </h1>
+  <!-- content -->
+  <section class="mb-10 bg-amber-400 text-bold">
+    <h2 class="t
+    text-center text-8xl">spacing</h2>
+    <div class="m-13 text-center text-balance text-bold text-5xl pb-4">margin</div>
+    <div class="py-8 text-6xl bg-center text-center">padding</div>
+  </section>
+  <!-- content -->
+
+  <section class="mb-10 bg-gradient-to-tr from-green-400 to-indigo-600">
+    <h3 class="text-center text-8xl font-bold">Sizing</h3>
+    <div class="m-13 text-center font-bold text-3xl">Margin</div>
+    <div class="py-8 text-center font-thin text-3xl">padding</div>
+    <!-- membuat 2 warna dalam  -->
+    <div class="w-32 h-32 text-4xl text-center bg-gradient-to-br from-orange-500 to-indigo-600">Kotak</div>
+  </section>
+
+  <section class="mb-98 font-inter mx-w-3xl mx-auto border-l-indigo-800">
+    <!-- INI SAYA MEMBUAT WARNA DI BELAKAN ATAU TRANSPARANT -->
+    <h2
+      class="mb-10 text-7xl text-center font-bold bg-gradient-to-br from-blue-600 to-teal-400 bg-clip-text text-transparent">
+      Membuat Blok Artikel Pada TailwindCss</h2>
+    <div class="mb-10 text-center"> By <span
+        class="bg-gradient-to-br from-green-500 to-teal-100 bg-clip-text text-transparent">Jhelky Walliya</span>
+      2024/05/27</div>
+    <p class="mb-10 text-center">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto velit culpa ipsam, quae tenetur maiores
+      eligendi nisi obcaecati omnis ex quas ad minima modi dicta mollitia vero.
+    </p>
+
+    <blockquote class="mb-10 text-center italic font-thin text-xl"> "Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Earum aliquam sapiente iure provident odit
+      iste voluptatum. Provident inventore nemo architecto aliquid eveniet ratione reprehenderit quas recusandae, nihil,
+      officiis necessitatibus nostrum deleniti tempora, dolor consequatur assumenda veritatis. Veniam, perspiciatis,
+      dolore hic ducimus, possimus minus iusto quasi exercitationem dignissimos nisi enim eos!</blockquote>
+
+    <p class="mb-20 text-center">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis temporibus nam, magnam repellendus nemo enim rem
+      ratione fuga nisi ducimus dignissimos iusto quae alias at distinctio atque. Unde laborum et vero ut eos neque quos
+      incidunt excepturi repellendus.
+    </p>
+    <!-- belajar membuat bakgroned overflow scroll -->
+    <div class="mx-w-xl h-96 bg-slate-300 mx-auto mt-6  overflow-scroll"
+      style="background-image: url('../asset/premium_photo-.avif')">
+      <p class="p-5 text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nemo soluta porro iure
+        perferendis cum
+        similique ut tempore, ullam minus officia dolorum? Quaerat accusamus voluptates nulla nemo cumque minus, non
+        deleniti, totam a eum veritatis doloribus aut consectetur. Molestias fugiat ex aspernatur magnam nobis iure
+        voluptates, atque sint, maiores aliquid veritatis reprehenderit ratione adipisci, delectus et iusto dignissimos
+        eos quibusdam impedit vitae facere provident? Molestiae excepturi corporis assumenda delectus explicabo nemo
+        quos
+        amet tempore consectetur soluta quidem hic distinctio nostrum itaque placeat possimus, sequi optio provident
+        dicta
+        sit autem. Aliquid neque voluptas, voluptatum itaque porro facilis optio placeat a voluptatem maiores veniam
+        velit
+        dignissimos nemo beatae, expedita praesentium animi fugit, consequatur cupiditate! Cupiditate, ipsam iure, quod
+        dicta temporibus itaque tempora ex doloribus quas dignissimos, et error saepe nisi cumque accusantium veniam
+        ipsa
+        rem esse inventore eligendi sed necessitatibus? Quasi dolorem soluta sapiente sunt sed? Dignissimos quidem eaque
+        earum iste non sequi! Ducimus error placeat unde! Natus adipisci explicabo debitis aut tempora odio harum
+        aperiam.
+        Nulla, adipisci pariatur. Accusantium inventore ipsa ea, quod minima sunt. Ullam laborum commodi cupiditate
+        impedit voluptate. Ab porro sint animi quasi? Quidem dicta fugit similique magni, alias numquam tempora officia
+        officiis iste maxime facilis beatae consequatur.</p>
+    </div>
+
+
+    <div class="mt-32 mx-w-xl mx-auto h-96
+     bg-slate-300 bg-cover bg-center rounded-br-2xl shadow-lg shadow-slate-950 overflow-hidden border-8"
+      style="background-image: url('../asset/lovi-stinio-O0pcpmaR4eA-unsplash.jpg')">
+      <h1 class="text-center text-white font-bold text-3xl bg-blue-900 mix-blend-color-dodge">Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Quo!</h1>
+      <div class="w-full h-full bg-blue-600 mix-blend-multiply"></div>
+    </div>
+<!--  membuat garis penbatas-->
+    <hr class="my-20 bg-blend-darken">
+    </hr>
+<!-- membuat Tombol Dark Moce degan Tambahan Js dikit -->
+<div class="flex justify-center">
+  <span class="text-sm text-slate-500 mr-2">Light</span>
+  <input type="checkbox" id="toggle" class="hidden">
+  <label for="toggle">
+    <div class="w-9 h-5 bg-slate-500 rounded-full flex items-center p-1 cursor-pointer">
+      <div class="w-4 h-4 bg-white rounded-full toggle-circle"></div>
+    </div>
+  </label>
+  <span class="text-sm text-slate-500 ml-2">Dark</span>
+</div>
+
+
+    <!-- Button ceklis -->
+    <button
+      class="my-10 bg-sky-500 px-5 py-2 rounded-full
+     text-white font-semibold font-inter block mx-auto hover:bg-sky-950  active:bg-sky-700 focus:ring-sky-300
+     dark:bg-slate-600 dark:text-slate-800
+     dark:hover:text-slate-900 dark:hover:bg-slate-100">simpan</button>
+
+    <!-- div styling -->
+    <div class="mb-96 
+    max-w-lg my-10 
+    border
+     border-slate-200
+      rounded-xl
+       mx-auto p-5 
+       shadow-md 
+       font-inter
+        hover:bg-sky-500 
+        group font-serif">
+      <!-- H5 styling -->
+      <h5 class="font-bold
+       text-slate-700 text-lg mb-3
+        group-hover:text-white  dark:group-hover:text-slate-800">My Card</h5>
+      <!-- paragraf styling -->
+      <p class="text-slate-600
+       group-hover:text-white
+        selection:bg-lime-400
+         selection:text-slate-950
+          first-line:uppercase 
+          first-line:tracking-widest
+          first-letter:text-7xl 
+          first-letter:float-left first-letter:mr-3 dark:group-hover:text-slate-800">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloremque eum
+        sit distinctio aperiam
+        praesentium, blanditiis optio beatae ducimus, est quaerat dolorum eius vel officiis necessitatibus, nihil ex
+        neque autem tenetur saepe eos magni consectetur quod numquam. Nisi, exercitationem tempora placeat ex sequi
+      </p>
+    </div>
+<!-- membuat div untuk ikon serhc pada email dan dan
+akun  mengunakan input from sapan dan label-->
+<div class="max-lg border border-slate-200 rounded-xl mx-auto font-inter p-5">
+  <form action="">
+   <label for="email">
+    <span class="
+    block 
+    font-semibold
+     text-slate-700 
+     after:content-['*'] after:ml-0.5 after:text-pink-700">Email</span>
+
+    <input type="email" id="email"
+     placeholder="Masukan Email.."
+      class="px-3 py-2 border shadow 
+      rounded 
+      w-full
+       block 
+       text-sm
+        placeholder:text-slate-400
+         focus:outline-none
+          focus:ring-sky-500
+           focus:border-sky-500
+           after:text-pink-500 after:ml-0.5
+           invalid:text-pink-600
+           invalid:focus:ring-pink-600
+           invalid:focus:border-pink-600 peer">
+           <p class="text-sm m-1 text-pink-700 invisible peer-invalid:visible"> Email Tidak Valid</p>
+   </label>
+  </form>
+ <form action="">
+  <!-- <label class="block">
+    <span class="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
+      Password
+    </span>
+    <input type="password" 
+    name="password" 
+    class="mt-1 px-3 py-2
+     bg-white
+      border 
+      shadow-sm
+       border-slate-300
+        placeholder-text-slate-400
+         focus:outline-none
+          focus:border-sky-500
+           focus:ring-sky-500 
+           block 
+           w-full
+            rounded-md 
+            sm:text-sm 
+            focus:ring-1" placeholder="Masukan Password..." />
+  </label>
+ </form> -->
+</div>
+    <div class="mb-96"></div>
+  </section>
+  
+  <script>
+    const checkbox = document.querySelector('#toggle');
+    const html = document.querySelector('html');
+
+    checkbox.addEventListener('click', function () {
+      checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark');
+    });
+  </script>
+</body>
+
+</html>
